@@ -72,8 +72,7 @@ public class ReceiveSmsActivity extends Activity {
             String str = "SMS de: "+ smsInboxCursor.getString(indexAddress) + "\n" +
                     smsInboxCursor.getString(indexBody) + "\n";
             arrayAdapter.add(str);
-        } while (smsInboxCursor.moveToNext() &&
-                smsInboxCursor.getString(indexAddress).equals("+573177536363"));
+        } while (smsInboxCursor.moveToNext());
 
     }
 
